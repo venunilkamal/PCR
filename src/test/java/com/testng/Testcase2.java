@@ -20,6 +20,7 @@ public class Testcase2 {
 		if (Browser.equalsIgnoreCase("firefox")) {
 			System.setProperty("webdriver.gecko.driver", "./src/test/resources/Drivers/geckodriver.exe");
 			driver = new FirefoxDriver();	
+			
 		}
 		
 		if (Browser.equalsIgnoreCase("chrome")) {

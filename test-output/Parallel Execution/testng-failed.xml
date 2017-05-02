@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Parallel Execution]" parallel="tests">
   <parameter name="Browser" value="IE"/>
-  <test name="Parallel exectuon2(failed)" parallel="tests">
+  <test name="Parallel exectuon2(failed)" parallel="classes">
     <parameter name="Browser" value="IE"/>
     <classes>
       <class name="com.testng.Testclass1">
@@ -19,7 +19,7 @@
       </class> <!-- com.testng.Testcase2 -->
     </classes>
   </test> <!-- Parallel exectuon2(failed) -->
-  <test name="Parallel exectuon1(failed)" parallel="tests">
+  <test name="Parallel exectuon1(failed)" parallel="classes">
     <parameter name="Browser" value="IE"/>
     <classes>
       <class name="com.testng.Testclass1">

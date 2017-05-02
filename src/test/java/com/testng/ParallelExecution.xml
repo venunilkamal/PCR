@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Parallel Execution" parallel="tests" thread-count="2">
-  <test name="Parallel exectuon1">
-  <parameter name="Browser" value="IE"></parameter>
+  <test name="Parallel exectuon1" parallel="classes">
+  <parameter name="Browser" value="chrome"></parameter>
     <classes>
       <class name="com.testng.Testcase2"/>
     </classes>
   </test> <!-- Default test -->
-  <test name="Parallel exectuon2">
-  	<parameter name="Browser" value="IE"></parameter>
+  <test name="Parallel exectuon2" parallel="classes">
+  	<parameter name="Browser" value="chrome"></parameter>
     <classes>
       <class name="com.testng.Testclass1"/>
     </classes>
